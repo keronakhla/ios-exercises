@@ -11,18 +11,26 @@
 @implementation SimpleCalculator
 
 - (NSInteger) increaseNumberBy1:(NSInteger) number {
-    /* WORK HERE */
+    NSInteger newInteger = 6;
+    NSInteger number = newInteger + 1;
     return number;
 }
-
+                                //why is number1 is in the method below
 - (NSInteger) addNumber:(NSInteger) number1 toNumber:(NSInteger) number2 {
-    /* WORK HERE */
-    return number1;
+    NSInteger number1 = 1;      //I didn't even declare it anywhere else
+    NSInteger number2 = 6;      //I didn't even declare it anywhere else
+    
+    NSInteger sumNumber = number1 + number2;
+    
+    return sumNumber;
 }
 
 - (NSInteger) remainderOfNumber:(NSInteger) dividend dividedByNumber:(NSInteger) divisor {
-    /* WORK HERE */
-    return 0;
+    NSInteger six = 6;
+    NSInteger four = 4;
+    
+    NSInteger newNumber = six % four;
+    return 0;           //why not returning newNumber?
 }
 
 @end
