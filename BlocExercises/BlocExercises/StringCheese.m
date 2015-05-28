@@ -11,27 +11,46 @@
 @implementation StringCheese
 
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
-    /* WORK HERE */
-    return nil;
+
+    NSString *stringCheese = [NSString stringWithFormat:@"My favorite cheese is %@.", cheeseName];
+
+//    NSString *prefix = @"My favorite cheese is ";
+//    prefix = [prefix stringByAppendingString:cheeseName];
+//    prefix = [both stringByAppendingString:@"."];
+    
+    return stringCheese;
 }
+
+/********************************************************/
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
-    /* WORK HERE */
-    return nil;
+    //input = moz cheese
+    
+    NSString *shortName = [cheeseName stringByReplacingOccurrencesOfString:@" cheese" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, cheeseName.length)];
+    
+    NSLog(@"%@",shortName);
+    return shortName;
 }
 
+
+/********************************************************/
+
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
+    
+    
     if (cheeseCount == 1) {
-        /* WORK HERE, ASSUMING THERE IS 1 CHEESE */
+        NSString *phrase = @"24 cheeses";
+        NSString *phrase = [cheese numberOfCheesesStringWithCheeseCount:4];
+        NSLog(@"%lu", cheeseCount);
     } else {
-        /* WORK HERE, ASSUMING THERE ARE 2+ CHEESES */
+        NSString *phrase2 = @"1 cheese";
+        NSString *phrase2 = [cheese numberOfCheesesStringWithCheeseCount:1];
+        NSLog(@"%lu", cheeseCount);
     }
     
-    /*
-     (You will learn more about if/else statements in the next checkpoint.)
-     */
+   
     
-    return nil;
+    return cheeseCount;
 }
 
 @end
