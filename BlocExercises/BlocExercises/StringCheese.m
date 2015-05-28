@@ -37,20 +37,12 @@
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     
-    
-    if (cheeseCount == 1) {
-        NSString *phrase = @"1 cheese";
-        NSString *phrase = [cheese numberOfCheesesStringWithCheeseCount:1];
-        NSLog(@"%lu", cheeseCount);
+    if (cheeseCount == 1){
+        return [NSString stringWithFormat:@"%ld cheese", (long)cheeseCount];
     } else {
-        NSString *phrase2 = @"24 cheeses";
-        NSString *phrase2 = [cheese numberOfCheesesStringWithCheeseCount:4];
-        NSLog(@"%lu", cheeseCount);
+        return [NSString stringWithFormat:@"%ld cheeses", (long)cheeseCount];
     }
-    
-   
-    
-    return cheeseCount;
+
 }
 
 @end
