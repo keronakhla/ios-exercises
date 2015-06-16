@@ -13,20 +13,20 @@
 - (BOOL) string:(NSString *)string1 isTheSameAsString:(NSString *)string2 {
     /* WORK HERE */
     
-    BOOL areTheyEqual = [string1 isEqualToString:string2];
+    BOOL areTheyEqual = [string1 isEqual:string2];
     NSLog(@"Are they equal? %@", areTheyEqual ? @"Yes they are" : @"No they aren't");
-    return (string1 == string2);
-
+    return areTheyEqual;
+    
 }
-
 /****************************************************************/
 
 - (BOOL) number:(NSNumber *)number1 isTheSameAsNumber:(NSNumber *)number2 {
     /* WORK HERE */
-    
-    BOOL areTheyEqual = number1 == number2;
+   
+    BOOL areTheyEqual = [number1 isEqual:number2];
     NSLog(@"Are they equal? %@", areTheyEqual ? @"Yes they are" : @"No they aren't");
-    return (number1 == number2);
+    return areTheyEqual;
+
 }
 
 /****************************************************************/
@@ -36,8 +36,12 @@
     
     BOOL int1GreaterThanInt2 = integer1 > integer2;
     NSLog(@"Is integer 1 greater than interger 2? %@", int1GreaterThanInt2 ? @"Yes" : @"No");
+    return int1GreaterThanInt2;
     
-    return NO;
 }
+
+
+
+
 
 @end
