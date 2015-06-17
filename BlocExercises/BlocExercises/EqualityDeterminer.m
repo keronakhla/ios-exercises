@@ -13,7 +13,7 @@
 - (BOOL) string:(NSString *)string1 isTheSameAsString:(NSString *)string2 {
     /* WORK HERE */
     
-    BOOL areTheyEqual = [string1 isEqual:string2];
+    BOOL areTheyEqual = [string1 isEqualToString:string2];
     NSLog(@"Are they equal? %@", areTheyEqual ? @"Yes they are" : @"No they aren't");
     return areTheyEqual;
     
@@ -23,7 +23,7 @@
 - (BOOL) number:(NSNumber *)number1 isTheSameAsNumber:(NSNumber *)number2 {
     /* WORK HERE */
    
-    BOOL areTheyEqual = [number1 isEqual:number2];
+    BOOL areTheyEqual = [number1 isEqualToNumber:number2];
     NSLog(@"Are they equal? %@", areTheyEqual ? @"Yes they are" : @"No they aren't");
     return areTheyEqual;
 
