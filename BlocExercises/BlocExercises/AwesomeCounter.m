@@ -12,6 +12,14 @@
 
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
+    
+    for (NSInteger i = number; i <= otherNumber; i++) {
+        
+        NSLog(@"%ld", (long)number);
+        
+    }
+
+    
     return @"";
 }
 
