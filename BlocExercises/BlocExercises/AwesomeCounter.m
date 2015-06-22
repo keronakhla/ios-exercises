@@ -13,14 +13,21 @@
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
     
-    for (NSInteger i = number; i <= otherNumber; i++) {
-        
-        NSLog(@"%ld", (long)number);
-        
+    NSMutableString *indices = [NSMutableString stringWithCapacity:1];
+    
+    if (number <= otherNumber) {
+        for (NSInteger i= number; i <= otherNumber; i++) {
+            [indices appendFormat:@"%d", i];
+        }
+    } else {
+        for (NSInteger i= otherNumber; i <= number; i++) {
+            [indices appendFormat:@"%d", i];
     }
+        }
 
     
-    return @"";
+    return @"%@", indices;
+
 }
 
 @end
