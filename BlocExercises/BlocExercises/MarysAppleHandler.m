@@ -39,13 +39,7 @@
 
    
     NSUInteger cost = 24;
-    NSString *message;
-    
-    if (self.getsDiscount) {
-        message = (cost *= .75) ? @"Discounted vodka should be $18." : @"Undiscounted vodka should be $24.";
-    } 
-    
-    return cost;
+    return (cost == 24) ? cost *= 0.75 : cost;
 }
 
 @end

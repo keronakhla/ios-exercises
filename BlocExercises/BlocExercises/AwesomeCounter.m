@@ -17,16 +17,15 @@
     
     if (number <= otherNumber) {
         for (NSInteger i= number; i <= otherNumber; i++) {
-            [indices appendFormat:@"%d", i];
+            [indices appendFormat:@"%ld", i];
         }
     } else {
         for (NSInteger i= otherNumber; i <= number; i++) {
-            [indices appendFormat:@"%d", i];
+            [indices appendFormat:@"%ld", i];
     }
         }
-
     
-    return @"%@", indices;
+    return indices;
 
 }
 
