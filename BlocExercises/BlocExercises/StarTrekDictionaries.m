@@ -12,6 +12,10 @@
 
 - (NSString *)favoriteDrinkForStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
     /* WORK HERE */
+    /* [someObject doSomethingWith:thisItem]; */
+    
+    
+
     return @"";
 }
 
