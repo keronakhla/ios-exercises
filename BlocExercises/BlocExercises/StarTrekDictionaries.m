@@ -13,20 +13,38 @@
 - (NSString *)favoriteDrinkForStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
     /* WORK HERE */
     /* [someObject doSomethingWith:thisItem]; */
+   
+    NSString *favoriteDrink = [characterDictionary valueForKey:@"favorite drink"];
     
+    return favoriteDrink;
+ 
     
-
-    return @"";
 }
+
+/**************************************************************************************/
 
 - (NSArray *)arrayOfFavoriteDrinksForStarTrekCharacters:(NSArray *)charactersArray {
     /* WORK HERE */
-    return @[];
+    
+    
+    NSArray *favoriteDrinksForCharacters = [charactersArray valueForKey:@"favorite drink"];
+    
+    
+    return favoriteDrinksForCharacters;
+    
+    
+    
 }
 
 - (NSDictionary *)dictionaryWithQuoteAddedToStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
     /* WORK HERE */
-    return @{};
+    
+    
+    NSMutableDictionary *myMutableDictionary = [characterDictionary mutableCopy];
+    [myMutableDictionary setValue:@"Buried deep within you, beneath all the years of pain and anger, there is something that has never been nurtured: the potential to make yourself a better man. And that is what it is to be human. To make yourself more than you are." forKey:@"quote"];
+    
+    return myMutableDictionary;
+    
 }
 
 @end
