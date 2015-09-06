@@ -8,7 +8,7 @@ Strings
 
 func favoriteCheeseStringWithCheese(cheese: String) -> String {
     // WORK HERE
-    let cheese = "Cheddar"
+    "My favorite cheese is \(cheese)."
     return cheese
 }
 
